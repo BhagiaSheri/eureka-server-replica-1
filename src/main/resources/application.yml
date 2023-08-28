@@ -1,0 +1,16 @@
+server:
+  port: 8761 
+ 
+eureka:
+  instance:
+    hostname: eurekaserver1
+    appname: eureka-cluster
+  environment: local
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaserver2:8762/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    
+    
+    
